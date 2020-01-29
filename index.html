@@ -9,11 +9,11 @@
 </head>
 <body class="body">
     <form action="Controller.php" method="post" class="center">
-        <input type="hidden" name="action" value="search">
-        <label>CPF:</label>
-        <input type="text" name="r1" class="text" id="">
+        <input type="hidden" name="action" value="search" minlength="9">
+        <label>NOME:</label>
+        <input type="text" name="r1" class="text" id="" required>
         <label>OS:</label>
-        <input type="text" name="r2" class="text" id="">
+        <input type="text" name="r2" class="text" id="" minlength="6" maxlength="6" inputmode="numeric" required>
         <input type="submit" value="Pesquisar" class="btn">
         <a href="create.html">
             Cadastrar
